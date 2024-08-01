@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorveteria Bênio</title>
+    <style>
+        /* Estilos CSS aqui */
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Cabeçalho aqui -->
+    </header>
+
+    <div id="home" class="container">
+        <!-- Seções de conteúdo aqui -->
+    </div>
+
+    <footer>
+        <!-- Rodapé aqui -->
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Exemplo de script para validação de formulário
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Aqui você pode adicionar a lógica de validação do formulário
+                const nome = document.getElementById('nome').value;
+                const email = document.getElementById('email').value;
+                const mensagem = document.getElementById('mensagem').value;
+
+                if (nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
+                    alert('Por favor, preencha todos os campos.');
+                    return;
+                }
+
+                // Aqui você pode enviar os dados do formulário para o servidor, etc.
+                console.log('Nome:', nome);
+                console.log('Email:', email);
+                console.log('Mensagem:', mensagem);
+
+                // Exemplo de envio fictício
+                alert('Mensagem enviada com sucesso!');
+                form.reset();
+            });
+        });
+    </script>
+</body>
+
+</html>
